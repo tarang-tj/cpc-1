@@ -1,0 +1,44 @@
+{
+  "fixture_scope": "synthetic:contract-v1",
+  "claim_boundary": "Deterministic contract validation only; not evidence of production-model performance or safety gains.",
+  "case_count_per_policy": 180,
+  "mutation_count": 45,
+  "metrics": [
+    {
+      "fixture_scope": "synthetic:contract-v1",
+      "policy": "CPC-1",
+      "n": 180,
+      "unsafe_autonomy_rate": 0.0,
+      "correct_decision_rate": 1.0,
+      "validator_pass_rate": 1.0,
+      "mean_latency_units": 2.0
+    },
+    {
+      "fixture_scope": "synthetic:contract-v1",
+      "policy": "Blind act",
+      "n": 180,
+      "unsafe_autonomy_rate": 0.6666666666666666,
+      "correct_decision_rate": 0.3333333333333333,
+      "validator_pass_rate": 0.0,
+      "mean_latency_units": 1.0
+    }
+  ],
+  "random_seed": null,
+  "randomness_note": "No randomized operations; fixture construction and evaluation are deterministic.",
+  "key_parameters": {
+    "replicates_per_case": 20,
+    "tau_near": 0.5,
+    "max_differing_fields": 1
+  },
+  "input_sha256": {
+    "cpc1.py": "591f99eab19f4645597536d927c06e86802f83ec520ee3989a753e846fea3e76",
+    "benchmark.py": "714d51a7231f2ec8a619e6a4cbbf9efc5ac872ee665d342efd3a4c686c5c3642",
+    "\u9898\u76ee\u5206\u6790\u62a5\u544a.md": "4ebc901d193648fd0cbf50977395c26841274d6b094112c3df2a531b213c9406"
+  },
+  "tool_versions": {
+    "python": "3.12.7",
+    "matplotlib": "3.9.2",
+    "numpy": "1.26.4"
+  },
+  "command": "python benchmark.py --project-root ."
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc">
+  <title id="title">CPC-1 proof-before-action authorization flow</title>
+  <desc id="desc">A current case is compared to action-matched safe and unsafe-boundary precedents. A certificate is recomputed and deterministically verified before ACT, ASK, or REJECT.</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #172033; }
+    .title { font-size: 31px; font-weight: 700; }
+    .label { font-size: 19px; font-weight: 700; }
+    .body { font-size: 16px; }
+    .box { stroke-width: 2; rx: 16; }
+    .arrow { stroke: #5b6578; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+  </style>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#5b6578"/></marker></defs>
+  <rect width="1200" height="460" fill="#fbfcfe"/>
+  <text x="60" y="58" class="title">CPC-1: proof before action</text>
+  <rect x="60" y="135" width="190" height="140" class="box" fill="#e8f1fb" stroke="#0072b2"/>
+  <text x="155" y="180" text-anchor="middle" class="label">Current case</text><text x="155" y="212" text-anchor="middle" class="body">task + candidate</text><text x="155" y="236" text-anchor="middle" class="body">action + evidence</text>
+  <path d="M250 205 H340" class="arrow"/>
+  <rect x="340" y="92" width="205" height="110" class="box" fill="#e8f7f1" stroke="#009e73"/>
+  <text x="442" y="135" text-anchor="middle" class="label">Safe precedent</text><text x="442" y="165" text-anchor="middle" class="body">same action</text>
+  <rect x="340" y="250" width="205" height="110" class="box" fill="#fcecea" stroke="#d55e00"/>
+  <text x="442" y="293" text-anchor="middle" class="label">Unsafe boundary</text><text x="442" y="323" text-anchor="middle" class="body">same action, close case</text>
+  <path d="M545 147 H635 M545 305 H635" class="arrow"/>
+  <rect x="635" y="135" width="220" height="140" class="box" fill="#fff7df" stroke="#e69f00"/>
+  <text x="745" y="175" text-anchor="middle" class="label">Certificate</text><text x="745" y="206" text-anchor="middle" class="body">minimal safe literals</text><text x="745" y="231" text-anchor="middle" class="body">recomputed + provenance</text>
+  <path d="M855 205 H935" class="arrow"/>
+  <rect x="935" y="135" width="205" height="140" class="box" fill="#f0f2f6" stroke="#5b6578"/>
+  <text x="1037" y="174" text-anchor="middle" class="label">Verifier</text><text x="1037" y="205" text-anchor="middle" class="body">exact bindings</text><text x="1037" y="230" text-anchor="middle" class="body">deterministic decision</text>
+  <text x="1037" y="333" text-anchor="middle" class="label" fill="#0072b2">ACT · ASK · REJECT</text>
+</svg>

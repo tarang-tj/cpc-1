@@ -1,0 +1,168 @@
+{
+  "fixture_version": "v1",
+  "case_count": 9,
+  "certificates": [
+    {
+      "case_id": "q1-safe",
+      "decision": "ACT(merge)",
+      "positive_precedent": "archive-1-safe",
+      "negative_precedent": "archive-1-unsafe",
+      "negative_type": "unsafe_boundary",
+      "literals": [
+        {
+          "field": "verified_identifier",
+          "required_safe_value": true,
+          "observed_value": true,
+          "status": "matched",
+          "provenance": "fixture:v1"
+        }
+      ],
+      "reason": null,
+      "validator_pass": true
+    },
+    {
+      "case_id": "q1-ask",
+      "decision": "ASK(verified_identifier)",
+      "positive_precedent": "archive-1-safe",
+      "negative_precedent": "archive-1-unsafe",
+      "negative_type": "unsafe_boundary",
+      "literals": [
+        {
+          "field": "verified_identifier",
+          "required_safe_value": true,
+          "observed_value": null,
+          "status": "unknown",
+          "provenance": "fixture:v1"
+        }
+      ],
+      "reason": "missing_literal",
+      "validator_pass": true
+    },
+    {
+      "case_id": "q1-reject",
+      "decision": "REJECT(mismatched_literal)",
+      "positive_precedent": "archive-1-safe",
+      "negative_precedent": "archive-1-unsafe",
+      "negative_type": "unsafe_boundary",
+      "literals": [
+        {
+          "field": "verified_identifier",
+          "required_safe_value": true,
+          "observed_value": false,
+          "status": "mismatched",
+          "provenance": "fixture:v1"
+        }
+      ],
+      "reason": "mismatched_literal",
+      "validator_pass": true
+    },
+    {
+      "case_id": "q2-safe",
+      "decision": "ACT(apply_transform)",
+      "positive_precedent": "archive-2-safe",
+      "negative_precedent": "archive-2-unsafe",
+      "negative_type": "unsafe_boundary",
+      "literals": [
+        {
+          "field": "unit_confirmed",
+          "required_safe_value": true,
+          "observed_value": true,
+          "status": "matched",
+          "provenance": "fixture:v1"
+        }
+      ],
+      "reason": null,
+      "validator_pass": true
+    },
+    {
+      "case_id": "q2-ask",
+      "decision": "ASK(unit_confirmed)",
+      "positive_precedent": "archive-2-safe",
+      "negative_precedent": "archive-2-unsafe",
+      "negative_type": "unsafe_boundary",
+      "literals": [
+        {
+          "field": "unit_confirmed",
+          "required_safe_value": true,
+          "observed_value": null,
+          "status": "unknown",
+          "provenance": "fixture:v1"
+        }
+      ],
+      "reason": "missing_literal",
+      "validator_pass": true
+    },
+    {
+      "case_id": "q2-reject",
+      "decision": "REJECT(mismatched_literal)",
+      "positive_precedent": "archive-2-safe",
+      "negative_precedent": "archive-2-unsafe",
+      "negative_type": "unsafe_boundary",
+      "literals": [
+        {
+          "field": "unit_confirmed",
+          "required_safe_value": true,
+          "observed_value": false,
+          "status": "mismatched",
+          "provenance": "fixture:v1"
+        }
+      ],
+      "reason": "mismatched_literal",
+      "validator_pass": true
+    },
+    {
+      "case_id": "q3-safe",
+      "decision": "ACT(map_metric)",
+      "positive_precedent": "archive-3-safe",
+      "negative_precedent": "archive-3-unsafe",
+      "negative_type": "unsafe_boundary",
+      "literals": [
+        {
+          "field": "denominator_confirmed",
+          "required_safe_value": true,
+          "observed_value": true,
+          "status": "matched",
+          "provenance": "fixture:v1"
+        }
+      ],
+      "reason": null,
+      "validator_pass": true
+    },
+    {
+      "case_id": "q3-ask",
+      "decision": "ASK(denominator_confirmed)",
+      "positive_precedent": "archive-3-safe",
+      "negative_precedent": "archive-3-unsafe",
+      "negative_type": "unsafe_boundary",
+      "literals": [
+        {
+          "field": "denominator_confirmed",
+          "required_safe_value": true,
+          "observed_value": null,
+          "status": "unknown",
+          "provenance": "fixture:v1"
+        }
+      ],
+      "reason": "missing_literal",
+      "validator_pass": true
+    },
+    {
+      "case_id": "q3-reject",
+      "decision": "REJECT(mismatched_literal)",
+      "positive_precedent": "archive-3-safe",
+      "negative_precedent": "archive-3-unsafe",
+      "negative_type": "unsafe_boundary",
+      "literals": [
+        {
+          "field": "denominator_confirmed",
+          "required_safe_value": true,
+          "observed_value": false,
+          "status": "mismatched",
+          "provenance": "fixture:v1"
+        }
+      ],
+      "reason": "mismatched_literal",
+      "validator_pass": true
+    }
+  ]
+}

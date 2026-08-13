@@ -1,0 +1,10 @@
+case_id,decision,positive_precedent,negative_precedent,negative_type,validator_pass
+q1-safe,ACT(merge),archive-1-safe,archive-1-unsafe,unsafe_boundary,True
+q1-ask,ASK(verified_identifier),archive-1-safe,archive-1-unsafe,unsafe_boundary,True
+q1-reject,REJECT(mismatched_literal),archive-1-safe,archive-1-unsafe,unsafe_boundary,True
+q2-safe,ACT(apply_transform),archive-2-safe,archive-2-unsafe,unsafe_boundary,True
+q2-ask,ASK(unit_confirmed),archive-2-safe,archive-2-unsafe,unsafe_boundary,True
+q2-reject,REJECT(mismatched_literal),archive-2-safe,archive-2-unsafe,unsafe_boundary,True
+q3-safe,ACT(map_metric),archive-3-safe,archive-3-unsafe,unsafe_boundary,True
+q3-ask,ASK(denominator_confirmed),archive-3-safe,archive-3-unsafe,unsafe_boundary,True
+q3-reject,REJECT(mismatched_literal),archive-3-safe,archive-3-unsafe,unsafe_boundary,True
