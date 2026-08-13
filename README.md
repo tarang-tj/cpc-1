@@ -1,5 +1,7 @@
 # CPC-1: Proof Before Action for AI Tool Agents
 
+[![verify](https://github.com/tarang-tj/cpc-1/actions/workflows/ci.yml/badge.svg)](https://github.com/tarang-tj/cpc-1/actions/workflows/ci.yml)
+
 **CPC-1 is a deterministic authorization layer for consequential AI-agent actions.** Before an agent can take `ACT(a)`, it must produce a certificate that a verifier can recompute from the current case and two action-matched precedents: one safe, one nearby unsafe boundary.
 
 > This repository demonstrates **synthetic contract validation**, not production-model safety, quality, or latency gains. Its purpose is to make the authorization rule executable, falsifiable, and easy to audit.
